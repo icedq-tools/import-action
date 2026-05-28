@@ -7,7 +7,7 @@ GitHub composite Action that imports an iceDQ rules or workflows bundle into a t
 ```yaml
 - uses: actions/checkout@v4
 
-- uses: icedq/import-action@v0
+- uses: icedq-tools/import-action@v1
   with:
     icedq-url:      ${{ secrets.ICEDQ_URL }}
     keycloak-url:   ${{ secrets.ICEDQ_KEYCLOAK_URL }}
