@@ -1,6 +1,8 @@
-# icedq/import-action
+# icedq-tools/import-action
 
 GitHub composite Action that imports an iceDQ rules or workflows bundle into a target workspace by invoking [`@icedq/cli`](https://www.npmjs.com/package/@icedq/cli).
+
+Pairs with [`icedq-tools/export-action`](https://github.com/marketplace/actions/icedq-export) and [`icedq-tools/generate-mapping-action`](https://github.com/marketplace/actions/icedq-generate-mapping) for promotion pipelines.
 
 ## Usage
 
