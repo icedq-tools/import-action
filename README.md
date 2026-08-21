@@ -67,7 +67,8 @@ Breaking changes are released under a new major tag (`@v2`, etc.) — existing `
 
 For iceDQ instances on private networks, set `runs-on: [self-hosted, icedq]` (or your runner's labels). The Action is runner-agnostic.
 
-## Companion repos
+## Related tools
 
-- [`icedq/cli`](https://github.com/icedq/cli) — the CLI this Action wraps
-- `icedq/export-action`, `icedq/validate-action` — coming in v0.2
+- [`icedq-tools/cli`](https://www.npmjs.com/package/@icedq/cli) — the CLI this Action wraps
+- [`icedq-tools/export-action`](https://github.com/marketplace/actions/icedq-export) — exports a bundle from the source workspace
+- [`icedq-tools/generate-mapping-action`](https://github.com/marketplace/actions/icedq-generate-mapping) — generates the mapping file this Action consumes
