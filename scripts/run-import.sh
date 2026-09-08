@@ -9,7 +9,7 @@ ARGS=(
   "--mapping-file" "${MAPPING_FILE}"
   "--timeout" "${TIMEOUT}"
   "--retain-log" "icedq-import.log"
-  "--output" "json"
+  "--output-format" "json"
 )
 
 if [[ "${USE_FQN:-false}" == "true" ]]; then
