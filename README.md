@@ -17,7 +17,7 @@ Pairs with [`icedq-tools/export-action`](https://github.com/marketplace/actions/
     client-secret:  ${{ secrets.ICEDQ_CLIENT_SECRET }}
     org-id:         ${{ vars.ICEDQ_ORG_ID }}
     account-id:     ${{ vars.ICEDQ_ACCOUNT_ID }}
-    workspace-id:   ${{ vars.PROD_WORKSPACE_ID }}
+    workspace-id:   ${{ vars.ICEDQ_WORKSPACE_ID }}
     bundle:         ./exports/finance.zip
     kind:           workflows
     mapping-file:   ./mappings/prod.json
