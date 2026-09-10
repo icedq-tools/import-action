@@ -34,7 +34,7 @@ inputs:
     description: 'Bundle kind: rules or workflows'
     required: true
   mapping-file:
-    description: 'Path to the mapping JSON (auto-generation arrives in v0.2)'
+    description: 'Path to the mapping JSON (author by hand, or auto-generate with icedq-tools/generate-mapping-action)'
     required: true
   use-fqn:
     description: 'Set true to resolve by FQN instead of UUIDs'
