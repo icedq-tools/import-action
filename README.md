@@ -11,24 +11,24 @@ Pairs with [`icedq-tools/export-action`](https://github.com/marketplace/actions/
 
 - uses: icedq-tools/import-action@v1
   with:
-    icedq-url:      ${{ vars.ICEDQ_URL }}
-    keycloak-url:   ${{ vars.ICEDQ_KEYCLOAK_URL }}
-    client-id:      ${{ secrets.ICEDQ_CLIENT_ID }}
-    client-secret:  ${{ secrets.ICEDQ_CLIENT_SECRET }}
-    org-id:         ${{ vars.ICEDQ_ORG_ID }}
-    account-id:     ${{ vars.ICEDQ_ACCOUNT_ID }}
-    workspace-id:   ${{ vars.ICEDQ_WORKSPACE_ID }}
-    bundle:         ./exports/finance.zip
-    kind:           workflows
-    mapping-file:   ./mappings/prod.json
-    strict:         'true'
+    icedq-base-url:  ${{ vars.ICEDQ_BASE_URL }}
+    keycloak-url:    ${{ vars.ICEDQ_KEYCLOAK_URL }}
+    client-id:       ${{ secrets.ICEDQ_CLIENT_ID }}
+    client-secret:   ${{ secrets.ICEDQ_CLIENT_SECRET }}
+    org-id:          ${{ vars.ICEDQ_ORG_ID }}
+    account-id:      ${{ vars.ICEDQ_ACCOUNT_ID }}
+    workspace-id:    ${{ vars.ICEDQ_WORKSPACE_ID }}
+    bundle:          ./exports/finance.zip
+    kind:            workflows
+    mapping-file:    ./mappings/prod.json
+    strict:          'true'
 ```
 
 ## Inputs
 
 | Input | Required | Default | Description |
 |---|---|---|---|
-| `icedq-url` | yes | — | iceDQ instance base URL |
+| `icedq-base-url` | yes | — | iceDQ instance base URL |
 | `keycloak-url` | yes | — | Keycloak token endpoint base |
 | `client-id` | yes | — | OAuth client ID |
 | `client-secret` | yes | — | OAuth client secret |
